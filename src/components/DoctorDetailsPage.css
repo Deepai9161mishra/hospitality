@@ -1,0 +1,165 @@
+.doctor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background: #f8f8f8;
+    padding: 2rem 7rem;
+    margin-bottom: 3.75rem;
+}
+
+.doctor-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: start;
+    flex: 1;
+    min-width: 250px;
+}
+
+.doctor-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.doctor-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.doctor-qual,
+.doctor-hospital {
+    line-height: 12px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.book-btn {
+    background: #0d9488;
+    color: #fff;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.doctor-contact-block {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f8f8f8;
+    border-radius: 12px;
+    border-left: 4px solid #0d9488;
+}
+
+.doctor-contact-block h4 {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+}
+
+.doctor-contact-block p {
+    margin: 0.35rem 0;
+    color: #555;
+}
+
+.doctor-contact-block a {
+    color: #0d9488;
+    font-weight: 600;
+}
+
+.book-btn:hover {
+    background: #0f766e;
+}
+
+.doctor-desc {
+    margin: 1rem 0;
+    color: #444;
+    line-height: 1.6;
+    padding: 0 7rem;
+    font-size: 1rem;
+}
+
+.doctor-sec {
+    padding: 0 7rem;
+    margin-top: 0.75rem;
+}
+
+.doctor-sec h4 {
+    margin-bottom: 0.4rem;
+    font-size: 1.3rem;
+}
+
+.doctor-sec li {
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 26px;
+}
+
+.custom-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background-image: url("/src/assets/arrow-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+    .doctor-details {
+        width: 100%;
+    }
+
+    .doctor-header {
+        padding: 1.2rem 1.1rem;
+        gap: 1.2rem;
+    }
+
+    .book-btn {
+        width: 100%;
+    }
+
+    .doctor-wrapper {
+        padding: 0 1rem;
+    }
+
+    .doctor-desc {
+        padding: 0 1.1rem;
+    }
+
+    .doctor-sec {
+        padding: 0 1.1rem;
+    }
+
+    .doctor-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .doctor-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .doctor-qual,
+    .doctor-hospital {
+        line-height: 1.4;
+        font-size: 1rem;
+    }
+
+}

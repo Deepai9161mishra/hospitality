@@ -1,0 +1,73 @@
+.dept-container {
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.dept-grid {
+    padding: 0 7rem;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.deptartment-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    background: #f7f8fb;
+    min-height: 100px;
+    height: 300px;
+}
+
+.department-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.department-label {
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    width: max-content;
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+    .dept-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 940px) {
+    .dept-sec {
+        padding-top: 0;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .dept-illustration img {
+        max-width: 150px;
+    }
+
+    .dept-grid {
+        padding: 0 1.1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .deptartment-card {
+        min-height: 200px;
+    }
+}

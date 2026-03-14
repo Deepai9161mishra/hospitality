@@ -1,0 +1,92 @@
+.doctor-page-wrapper {
+    margin: auto;
+    display: grid;
+    gap: 0.5rem;
+}
+
+
+.doctors-grid {
+    padding: 0 7rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    padding-top: 60px;
+}
+
+.doctors-card {
+    border: 1px solid #f0f2f5;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.doctors-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.doctors-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f7f8fb;
+}
+
+.doctors-name {
+    font-weight: 700;
+    color: var(--text-dark);
+    font-size: 16px;
+}
+
+.doctors-title {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.doctors-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.arrow-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background: #bfbfbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow-btn:hover {
+    background: #a9a9a9;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+}
+
+.doctors-card-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    .doctors-grid {
+        padding: 0 1.1rem;
+    }
+}

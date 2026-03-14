@@ -1,0 +1,200 @@
+.service-wrapper {
+    padding: 2rem 7rem;
+}
+
+.serv-container {
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 6px;
+    color: #555;
+}
+
+.image-sec {
+    margin: 1.5rem 0;
+}
+
+.image-class {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service-main {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 2rem;
+}
+
+.details-content h3 {
+    margin-top: 1.5rem;
+}
+
+.details-content ul {
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
+}
+
+.services-class{
+    background: #f8f8f8;
+    padding: 1rem 1.25rem;
+    border-radius: 24px;
+}
+
+.sidebar {
+    border-radius: 14px;
+    padding: 1.25rem 0;
+    height: fit-content;
+}
+
+.sidebar h4 {
+    margin-bottom: 0.75rem;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.25rem;
+}
+
+.sidebar-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    transition: all 0.25s ease;
+}
+
+.sidebar-list li:hover {
+    color: #0d9488;
+    cursor: pointer;
+}
+
+.btn-appointment {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: #0d9488;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.btn-appointment:hover {
+    background: #0f766e;
+}
+
+.doctor-card {
+    background: #f8f8f8;
+    border-radius: 24px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.doctor-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0.75rem 0;
+}
+
+.doctor-profile img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.doctor-card h5 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.doc-role {
+    font-size: 12px;
+    color: #666;
+}
+
+.doc-qual {
+    font-size: 12px;
+    color: #888;
+}
+
+.doc-bio {
+    font-size: 13px;
+    color: #555;
+    margin: 0.75rem 0 1rem;
+}
+
+.btn-small {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #0d9488;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-small:hover {
+    background: #0f766e;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 26px;
+}
+
+.custom-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background-image: url("/src/assets/arrow-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+    .service-main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .doctor-card {
+        margin-top: 1rem;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .service-wrapper {
+        padding: 1.25rem;
+    }
+}

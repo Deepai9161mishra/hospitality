@@ -1,0 +1,36 @@
+.about-page-sec {
+    padding: 1rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: #f8f8f8;
+    min-height: 300px;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.about-illustration img {
+    max-width: 220px;
+}
+
+@media (max-width: 900px) {
+    .about-page-sec {
+        padding: 0 20px 30px;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .about-illustration img {
+        max-width: 150px;
+    }
+}

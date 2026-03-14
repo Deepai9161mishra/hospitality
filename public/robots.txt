@@ -1,0 +1,14 @@
+# Robots.txt for AMG Health Hospital Website
+# https://www.amghealth.in
+
+User-agent: *
+Allow: /
+
+# Disallow any API or internal routes if they exist
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://www.amghealth.in/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
