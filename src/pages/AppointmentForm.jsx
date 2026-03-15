@@ -62,6 +62,15 @@ const AppointmentForm = () => {
                 department: departmentName,
                 doctor: doctorName,
             });
+            setFormData({
+                name: "",
+                phone: "",
+                email: "",
+                department: "",
+                doctor: "",
+                appointmentDate: "",
+                message: "",
+            });
             setSubmitted(true);
         } catch (error) {
             console.error(error);
