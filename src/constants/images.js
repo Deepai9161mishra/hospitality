@@ -95,5 +95,5 @@ export const Images = {
   GallerySurgery: `${base}/homepage/Gallery-surgery.jpeg`,
   GalleryDoctorConsultation: `${base}/homepage/Gallery-doctor-consultation.jpeg`,
   GalleryICU: `${base}/homepage/Gallery-ICU.jpeg`,
-  HospitalTeam: `${base}/homepage/HospitalTeam.jpeg`,
+  HospitalTeam: `${base}/homepage/HospitalTeam.png`,
 };
