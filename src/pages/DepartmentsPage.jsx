@@ -4,20 +4,21 @@ import "./DepartmentPage.css";
 import {Link} from "react-router-dom";
 import AboutSection from "../components/AboutSection.jsx";
 import {SEO, BreadcrumbSchema} from "../components/SEO";
+import { BRAND } from "../constants/brand";
 
 const DepartmentsPage = () => {
     const breadcrumbs = [
-        { name: "Home", url: "https://www.amghealth.in/" },
-        { name: "Departments", url: "https://www.amghealth.in/departments" }
+        { name: "Home", url: BRAND.siteUrl + "/" },
+        { name: "Departments", url: BRAND.siteUrl + "/departments" }
     ];
 
     return (
         <div className="dept-container">
             <SEO
-                title="Medical Departments - AMG Health Hospital Patiala"
-                description="Expert care across 14+ medical departments at AMG Health: Cardiology, Neurology, Orthopedics, Gynecology, Urology, Pediatrics, Endocrinology, Pulmonology, and more."
-                keywords="hospital departments Patiala, cardiology, neurology, orthopedics, gynecology, urology, pediatrics, endocrinology, pulmonology"
-                canonicalUrl="https://www.amghealth.in/departments"
+                title={`Medical Departments - ${BRAND.name} ${BRAND.location}`}
+                description={`Expert care across 14+ medical departments at ${BRAND.name}: Cardiology, Neurology, Orthopedics, Gynecology, Urology, Pediatrics, Endocrinology, Pulmonology, and more.`}
+                keywords={`hospital departments ${BRAND.location}, cardiology, neurology, orthopedics, gynecology, urology, pediatrics, endocrinology, pulmonology`}
+                canonicalUrl={`${BRAND.siteUrl}/departments`}
             />
             <BreadcrumbSchema items={breadcrumbs} />
             <AboutSection

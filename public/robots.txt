@@ -1,5 +1,5 @@
-# Robots.txt for AMG Health Hospital Website
-# https://www.amghealth.in
+# Robots.txt for Sahyadri care Hospital Website
+# https://www.sahyadricare.in
 
 User-agent: *
 Allow: /
@@ -8,7 +8,7 @@ Allow: /
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://www.amghealth.in/sitemap.xml
+Sitemap: https://www.sahyadricare.in/sitemap.xml
 
 # Crawl-delay (optional, for polite crawling)
 Crawl-delay: 1

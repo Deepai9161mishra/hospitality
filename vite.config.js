@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import prerender from '@prerenderer/rollup-plugin'
-import puppeteerRenderer from '@prerenderer/renderer-puppeteer'
+import jsdomRenderer from '@prerenderer/renderer-jsdom'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
@@ -98,17 +98,10 @@ export default defineConfig({
         // Only add prerender plugin if not skipped
         !skipPrerender && prerender({
           routes: allRoutes,
-          renderer: puppeteerRenderer,
+          renderer: jsdomRenderer,
           rendererOptions: {
-            // Wait for React and Helmet to fully render
+            // Wait for React and Helmet to fully render (jsdom supports renderAfterTime)
             renderAfterTime: 2500,
-            // Run headless
-            headless: true,
-            // Set viewport
-            defaultViewport: {
-              width: 1280,
-              height: 800,
-            },
           },
           postProcess(renderedRoute) {
             // Ensure proper formatting
